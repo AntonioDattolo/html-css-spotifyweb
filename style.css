@@ -111,10 +111,26 @@
     bottom: 3%;
     margin:0 0.6rem;
 }
+.flex-container-header{
+    display: flex;
+    height: 25vh;
+    width: 90vw;
+    margin: 0.5vh 1vh;
+    
+   
+    
+    flex-direction: column;
+    align-items: flex-start;
+    
+    
+    gap: 1vh;
+    
+    background-color: #141922;
 
+}
 .flex-container2{
     display: flex;
-    max-height: 99vh;
+    min-height: 75vh;
     width: 90vw;
     margin: 0.5vh 1vh;
     
