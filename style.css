@@ -4,7 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: whitesmoke;
+   
+    
     
     
     text-decoration: none;
@@ -34,6 +35,13 @@
     display: flex; 
 }
 
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    
+}
+
 /* SIDE NAV */
 
 .nav-container{
@@ -41,22 +49,24 @@
     flex-direction: column;
     flex-wrap: wrap;
     gap: 1vh;    
-    width: 10%;
-    height: 100vh;
+    width: 13%;    
     position: relative;
+    background-color: black;
+    overflow: scroll;
+    min-height: 90vh;
+    color: #2a2a2a;
 }
 
 .home-box{    
-    width: 100%;
-    background-color: black;
-    border: 1px solid black;
+    width: 100%;    
     display: flex;
-    align-items: center;   
+    align-items: center;
+    color: white;   
 }
 
-.home-box h1{
+.home-box > h1{
     font-size: 30px;
-    color: white;
+    
 }
 
 .home-box img{
@@ -67,12 +77,13 @@
 }
 
 .side-library{
-    
+    color: #2a2a2a; 
     width: 100%;
     display: flex;
     flex-direction: column;   
     border: 1px solid red;
-    padding: 0.5rem;  
+    padding: 0.5rem;
+    
 }
 
 .side-library img{
@@ -82,7 +93,7 @@
 
 .side-library h5{
     margin: 0.2rem 0;
-    color: whitesmoke;
+    color: #2a2a2a;
     display: inline-block;
     position: relative; 
     bottom:10px;   
@@ -90,10 +101,17 @@
 
 .side-playlist{
     padding: 0.7rem;
+    overflow: scroll;
+    color: #ffffff;
 }
 
 .side-playlist div{
     margin: 0.8rem 0;
+    font-weight: 450;
+}
+
+.side-playlist a{
+    color: #2a2a2a;
 }
 
 .fa-plus{
@@ -109,30 +127,48 @@
     bottom: 12%;
     left: 1rem;
     padding:0 0.9rem;
+    color: #2a2a2a;
 }
 
 .profile img{
-    height: 15px;
-    margin-right: 0.6rem;
+    height: 25px;
+    margin:0.2rem 0.6rem 0 0.3rem;
 }
 
 .profile a{
     margin: 0.3rem 0;
     display: block;
+    color: #2a2a2a;
+    font-size: 16px;
+}
+.profile h4{
+    display: inline-block;
+    color: #a59d9d;
+    font-size: 20px;
+    margin-top: 0.3rem;
+}
+/* SIDEBAR INTERACTION */
+
+.side-library h5:hover,
+.side-playlist a:hover,
+.profile a:hover,
+.profile h4:hover{
+    color: white;   
 }
 
 /* MAIN APP */
-        
-        /***** HEADBAR *****/
+
+/***** HEADBAR *****/
 
 .main-container{
     display: flex;
-    height: 100%;
-    width: 90%;    
+    
+    width: 87%;    
     flex-direction: column;
     align-items: flex-start;
     gap: 1vh;
     background-color: #141922;
+    
 }
 
 .headbar{
@@ -154,15 +190,21 @@
     display: flex;
     justify-content: center;
     padding: 1.5rem 4.5rem;
-    gap: 1.8rem;   
+    gap: 1.8rem;
+    color: #656565;   
 }
+
+.headbar-button > a{
+    color: #656565;
+    font-weight: 500;
+}
+
 
 /************ MAIN CONTENT ************/
 /* COMMON MAIN */
 
 .content-container{
-    display: flex;
-    min-height: 75vh;
+    display: flex;    
     width: 100%;
     padding: 10vh 0;      
     flex-direction: column;
@@ -170,6 +212,7 @@
     gap: 1vh;
     overflow: scroll;
     background-color: #141922;
+    color: #ffffff;
 }
 
 .flex-row{
@@ -183,6 +226,7 @@
     border: 1px solid red;
     width: calc((100% / 6) - 1rem );
     text-align: center;
+    position: relative;
 }
 
 .for-u{
@@ -195,6 +239,13 @@
     border-radius: 50%;
 }
 
+.playlist  h2,
+.for-u  h2,
+.for-u h3{
+    padding-left: 1rem;
+}
+
+
 /* *** PLAYLIST *** */
 .playlist{
     width: 100%;
@@ -205,13 +256,52 @@
 
 .prewiev > img{
     width: 100%;
-    padding: 0.5rem;   
+    padding: 0.5rem;       
 }
 
 .prewiev h4,h5{
     margin:0.4rem 0;
     color: whitesmoke;
 }
+
+/* MAIN INTERACTION */
+
+.upgrade > a:hover{
+    font-size: 20px;
+}
+
+.headbar-button hr{
+    width:40%;
+    margin: 2% 30%;
+    border: 1px solid rgb(10, 247, 10);
+    visibility: hidden;
+    box-shadow: 0 0 10px rgba(10, 247, 10, 0.8);
+}
+
+.headbar-button a:hover{
+    hr{
+        visibility: visible;
+    }
+}  
+ 
+.invisible{
+    position: absolute;
+    bottom: 50% ;
+    left: 35%;
+    font-size: 80px;
+    color: #ffffff;
+    visibility: hidden;
+}
+
+.prewiev:hover{
+    .invisible{ 
+        visibility: visible;
+        box-shadow:0px 0px 15px  rgba(255, 255, 255, 0.8);
+        border-radius: 50%;
+    }
+}
+
+
 
 /* ***TOOLBAR*** */
 
@@ -220,12 +310,14 @@
     z-index: 1;
     bottom: 0;
     width: 100%;
-    background-color: rgb(94, 91, 91);
+    background-color: #282828;
     height: 100px;
     display: flex;
     justify-content: space-between;
-    
-     
+    color: #ffffff;
+}
+.toolbar a{
+    color: #ffffff;
 }
 
 .playerleft{
@@ -238,12 +330,24 @@
 }
 
 .playerleft img{
-    height: 100%;   
+    height: 100%; 
+    object-fit: contain;  
+}
+
+.img-album{ 
+    height: 100%;
 }
 
 
 .playerleft a{
     font-size: 18px;
+    color: #5a5a5a;
+    margin: 0 0.18rem;
+}
+
+.playerleft h4{
+    color: #5a5a5a;
+    font-size: 13px;
 }
 
 .playercenter{
@@ -256,13 +360,19 @@
 }
 
 .playercenter a{
+    font-size: 18px;
+    margin: 0 0.7rem;
+}
+
+.playercenter .fa-circle-play {
     font-size: 26px;
-    margin: 0 1rem;
+    margin: 0 1.5rem;
 }
 
 .timebar{
     height: 0.25vh;
     background-color: red;
+    background: linear-gradient(90deg, rgba(193,193,193,1) 0%, rgba(193,193,193,1) 37%, rgba(202,202,202,1) 37%, rgba(90,90,90,1) 37%);
     width: 35vw;
 }
 
@@ -277,6 +387,7 @@
 .volume-bar{
     height: 2px;
     background-color: red;
+    background: linear-gradient(90deg, rgba(193,193,193,1) 0%, rgba(193,193,193,1) 37%, rgba(202,202,202,1) 37%, rgba(90,90,90,1) 37%);
     width: 5vw;
 }
 
@@ -389,7 +500,7 @@
     
     /* SIDENAV */
     .nav-container{
-        width: 30%;
+        width: 32%;
     }
     
     .profile{
@@ -403,7 +514,9 @@
     
     /* MAIN APP */
     /* HEADBAR */
-  
+    .main-container{
+        width: 68%;
+    }
     
     .headbar-button{
         flex-wrap: wrap;
@@ -634,6 +747,4 @@
 
 /* EXTRALARGE SCREEN 1280> ---> DEFAULT(DESKTOP FIRST TESTED ON ODISSEYG5) */
 
-/* MAX HEIGHT 350px */ TESTED
-
-
+/* MAX HEIGHT 350px TESTED*/ 

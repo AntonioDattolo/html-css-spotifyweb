@@ -6,9 +6,12 @@
     <title>Spotify</title>
     <link rel="stylesheet" href="Style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+    <div class="container roboto-thin">
         <!-- SIDE NAV -->
         <nav class="nav-container">
             <div class="home-box">
@@ -71,9 +74,9 @@
             </div>
 
             <div class="profile">
-                <a href="#"><img src="./img/download.svg" alt=""><h4>Installa app</h4></a>
+                <a href="#"><img src="./img/download.svg" alt="">Installa app</a>
                 <hr>
-                <a href="#"><img src="./img/profile.svg" alt=""><h4>Jhon Doe</h4></a>
+                <a href="#"><img src="./img/profile.svg" style="background-color: #2a2a2a; border-radius: 50%;"  alt=""><h4>Jhon Doe</h4></a>
             </div>
 
         </nav>
@@ -82,16 +85,29 @@
 
         <main class="main-container">
             <div class="headbar">
-                <div class="upgrade" style="text-align: right; padding: 1.9rem;">
-                    <a href="#">EFFETTUA L'UPGRADE</a>
+                <div class="upgrade" style="text-align: right; padding: 1.9rem; ">
+                    <a href="#" style="color: #ffffff; font-weight: 400;">EFFETTUA L'UPGRADE</a>
                 </div> 
                 <div class="headbar-button">
-                    <a href="">IN EVIDENZA</a>
-                    <a href="">PODCAST</a>
-                    <a href="">CLASSIFICHE</a>
-                    <a href="">GENERI E MOOD</a>
-                    <a href="">NUOVE USCITE</a>
-                    <a href="">SCOPRI</a>
+                    <a href="">IN EVIDENZA
+                        <hr>
+                    </a>
+                    <a href="">
+                        PODCAST
+                        <hr>
+                    </a>
+                    <a href="">CLASSIFICHE
+                        <hr>
+                    </a>
+                    <a href="">GENERI E MOOD
+                        <hr>
+                    </a>
+                    <a href="">NUOVE USCITE
+                        <hr>
+                    </a>
+                    <a href="">SCOPRI
+                        <hr>
+                    </a>
                 </div>              
             </div>
             
@@ -108,31 +124,38 @@
                             <img  src="./img/metal_lifting.jpg" alt="">
                             <h4>Heavy Metal</h4>
                             <h5>Subtitle</h5>
+                            <a href="" class="fa-regular fa-circle-play invisible"></a>
+                            
                         </div>
                         <div class="prewiev">
                             <img src="./img/stranger.jpeg" alt="">
                             <h4>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h4>
                             <h5>Kyle Dixon & Michael Stein</h5>
+                            <a href="" class="fa-regular fa-circle-play invisible"></a>
                         </div>
                         <div class="prewiev">
                             <img src="./img/aquietplace.jpeg" alt="">
                             <h4>A Quiet Place</h4>
                             <h5>Subtitle</h5>
+                            <a href="" class="fa-regular fa-circle-play invisible"></a>
                         </div>
                         <div class="prewiev">
                             <img src="./img/split.jpeg" alt="">
                             <h4>Split</h4>
                             <h5>Subtitle</h5>
+                            <a href="" class="fa-regular fa-circle-play invisible"></a>
                         </div>
                         <div class="prewiev">
                             <img src="./img/cure.jpeg" alt="">
                             <h4>A cure for wellness</h4>
                             <h5>Subtitle</h5>
+                            <a href="" class="fa-regular fa-circle-play invisible"></a>
                         </div>
                         <div class="prewiev">
                             <img  src="img/sinister.jpeg" alt="">
                             <h4>Sinister</h4>
                             <h5>Subtitle</h5>
+                            <a href="" class="fa-regular fa-circle-play invisible"></a>
                         </div>
                     </div>
     
@@ -142,15 +165,17 @@
                 
                 <div class="for-u">
                     <h2>Creato per Jhon Doe</h2>
-                    <h4>Più ascolti, più accurati saranno i suggerimenti.</h4>
+                    <h3>Più ascolti, più accurati saranno i suggerimenti.</h3>
                     <div class="flex-row">
                         <div class="prewiev">
                             <img  src="./img/radar.jpeg" alt="">
                             <h4>Heavy Metal</h4>
+                            <a href="" class="fa-regular fa-circle-play invisible"></a>
                         </div>
                         <div class="prewiev">
                             <img src="./img/mixdaily.jpeg" alt="">
                             <h4>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h4>
+                            <a href="" class="fa-regular fa-circle-play invisible"></a>
                         </div>
                     </div>
     
@@ -158,15 +183,17 @@
     
                 <div class="for-u">
                     <h2>Artisti più popolari</h2>
-                    <h4>Più ascolti, più accurati saranno i suggerimenti.</h4>
+                    <h3>Più ascolti, più accurati saranno i suggerimenti.</h3>
                     <div class="flex-row">
                         <div class="prewiev">
                             <img  class="radius" src="./img/youg.jpeg" alt="">
                             <h4>Heavy Metal</h4>
+                            <a href="" class="fa-regular fa-circle-play invisible"></a>
                         </div>
                         <div class="prewiev">
                             <img class="radius" src="./img/einaudi.jpeg" alt="">
                             <h4>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h4>
+                            <a href="" class="fa-regular fa-circle-play invisible"></a>
                         </div>
                     </div>
     
@@ -181,7 +208,7 @@
 
         <section class="toolbar">
             <div class="playerleft">
-                <div style="display: flex; gap: 3px; ">
+                <div style="display: flex; align-items: center; gap: 3px; ">
                     <div class="img-album">
                         <img src="./img/sinister.jpeg" alt="">
 
@@ -206,7 +233,7 @@
                 <div>
                     <a href="" class="fa-solid fa-shuffle"></a>
                     <a href="" class="fa-solid fa-forward-step" style="transform: rotate(180deg);"></a>
-                    <a href="" class="fa-solid fa-play fa-fade"></a>
+                    <a href="" class="fa-regular fa-circle-play"></a>
                     <a href="" class="fa-solid fa-forward-step"></a>
                     <a href="" class="fa-solid fa-rotate-right"></a>
                 </div>
@@ -219,9 +246,9 @@
             </div>
 
             <div class="playerright">
-                <i class="fa-solid fa-list-ul"></i>
-                <i class="fa-solid fa-desktop"></i>
-                <i class="fa-solid fa-volume-high"></i>
+                <a href="" class="fa-solid fa-list-ul"></a>
+                <a href="" class="fa-solid fa-desktop"></a>
+                <a href="" class="fa-solid fa-volume-high"></a>
                 <div class="volume-bar" ></div>
             </div>
         </section>
