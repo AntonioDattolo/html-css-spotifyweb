@@ -57,14 +57,13 @@
     color: white;   
 }
 
-.home-box > h1{
-    font-size: 30px;    
+.xl{
+    width: 80%;
+    margin: 0.2rem;  
 }
 
-.home-box img{
-    width: 50px;
-    padding: 0.6rem 0.6rem;
-    filter: invert(100%);
+.xs{
+    display: none;
 }
 
 .side-library{
@@ -451,7 +450,15 @@
     .nav-container{
         position: relative;
     }
-    
+    .xl{
+        display: none;
+    }
+    .xs{
+        display: block;
+        filter: invert(100%);
+        margin: 0.3rem;  
+    }
+
     .side-library{
         justify-self: self-start;
     }
