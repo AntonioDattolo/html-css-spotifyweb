@@ -307,7 +307,7 @@
     bottom: 0;
     width: 100%;
     background-color: #282828;
-    height: 10vh;
+    height: 90px;
     display: flex;
     justify-content: space-between;
     color: #ffffff;
@@ -319,31 +319,34 @@
 .playerleft{
     width: 15%;
     display: flex;
-    justify-content: space-between;
-    
-    gap: 1rem;
-    padding: 1rem;   
+    justify-content: space-around;
+    height: 100%;    
+    padding: 0.4rem;   
 }
 
-.playerleft img{
-    height: 100%; 
-    object-fit: contain;  
+.img-album { 
+    width: 50%;   
+}
+.img-album > img{
+    width: 90%;
 }
 
-.img-album{ 
-    height: 100%;
+.txt-album{
+    width: 50%;
 }
-
 
 .playerleft a{
     font-size: 18px;
     color: #5a5a5a;
     margin: 0 0.18rem;
 }
-
+.playerleft h3{
+    font-size: 14px;
+}
 .playerleft h4{
     color: #5a5a5a;
     font-size: 13px;
+    
 }
 
 .playercenter{
@@ -505,12 +508,10 @@
     }
 
     .playerleft{
-        width: 25%;
-        justify-content: space-between;              
-        padding: 0.9rem 0.1rem;
-        gap: 0.25rem;   
+        width: 25%;                      
+        padding: 0.9rem 0.1rem;  
     }
-     
+    
     .playerleft div h3{
         font-size: 8px;  
     }
@@ -597,11 +598,15 @@
     }
     .playerleft{
         width: 25%;        
-        padding: 0.6rem; 
+        padding: 0.5rem; 
     }
     
-    .playerleft img{
-        height: 5vh;   
+    .playerleft h3{
+        font-size: 9px;
+
+    }
+    .playerleft h4{
+        font-size: 8px;
     }
 
     .playerleft div a{
@@ -753,16 +758,19 @@
     .toolbar{
         height: 65px;
     }
-    .playerleft{
-        width: 25%;        
-        padding: 0.6rem; 
-        justify-content: space-between;
-    }
-    
-    .playerleft img{
-        height: 5.8vh;   
+   
+    .img-album { 
+        width: 50%;   
     }
 
+    .img-album > img{
+        width: 75%;
+    }
+    
+    .txt-album{
+        width: 50%;
+    }
+    
     .playerleft div a{
         font-size: 15px;
     }
