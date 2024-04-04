@@ -119,6 +119,8 @@
     height: 10vh;
     padding:0 0.9rem;
     color: #2a2a2a;
+    position: absolute;
+    bottom: 12%;
 }
 
 .profile img{
@@ -252,6 +254,12 @@
 .prewiev h4,h5{
     margin:0.4rem 0;
     color: whitesmoke;
+}
+
+.prewiev h5, .for-u h3{
+    color: #656565;
+    margin:0.4rem 0;
+    font-size: 15px;
 }
 
 /* MAIN INTERACTION */
