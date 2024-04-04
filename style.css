@@ -46,8 +46,8 @@
     width: 13%;    
     position: relative;
     background-color: black;    
-    height: 100vh;
     color: #2a2a2a;
+    height: calc(100% - 100px);
 }
 
 .home-box{    
@@ -116,11 +116,8 @@
 
 .profile{
     width: 70%;
-    height: 10vh;
-    padding:0 0.9rem;
-    color: #2a2a2a;
-    position: absolute;
-    bottom: 12%;
+    padding:0 0.5rem;
+    color: #2a2a2a;  
 }
 
 .profile img{
@@ -199,8 +196,7 @@
 
 .content-container{
     display: flex;    
-    width: 100%;
-    padding: 10vh 0;      
+    width: 100%;       
     flex-direction: column;
     align-items: flex-start;
     gap: 1vh;
@@ -320,6 +316,7 @@
     justify-content: space-between;
     color: #ffffff;
 }
+
 .toolbar a{
     color: #ffffff;
 }
@@ -482,11 +479,7 @@
     .side-playlist {
         display: none;
     }
-    .profile{
-        position: relative;
-        top:60%; 
-        right: 10%;       
-    }
+    
     .profile h4,hr{
         display: none;
     }
